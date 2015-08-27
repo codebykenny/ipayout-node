@@ -1,4 +1,6 @@
 # ipayout-node
+[![npm version](https://badge.fury.io/js/ipayout-node.svg)](http://badge.fury.io/js/ipayout-node)
+
 A node.js module for interacting with iPayout eWallet API.
 
 Full iPayout Documentation: https://www.i-payout.com/API/Default.aspx
