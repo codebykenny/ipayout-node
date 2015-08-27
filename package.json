@@ -1,0 +1,14 @@
+{
+  "name": "ipayout-node",
+  "version": "1.0.0",
+  "description": "A node.js module for interacting with iPayout eWallet API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenneth Hernandez",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.61.0"
+  }
+}
