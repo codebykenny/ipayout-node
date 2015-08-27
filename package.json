@@ -1,6 +1,6 @@
 {
   "name": "ipayout-node",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "A node.js module for interacting with iPayout eWallet API.",
   "main": "index.js",
   "homepage": "https://github.com/kennysmoothx/ipayout-node",
