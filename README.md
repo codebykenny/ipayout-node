@@ -7,7 +7,9 @@ I created this as an abstraction to the iPayout API making it easier to send and
 
 #Installation
 
-`npm install ipayout-node`
+```
+	npm install ipayout-node
+```
 
 #Usage
 
