@@ -25,7 +25,7 @@ var API = function(options) {
 	if (options.sandbox && options.sandbox === true) {
 		this.apiUrl	= 'https://testewallet.com/eWalletWS/ws_JsonAdapter.aspx';
 	} else {
-		this.apiUrl	= 'https://www.i-payout.net/eWalletWS/ws_eWallet.asmx';
+		this.apiUrl	= 'https://i-payout.net/eWalletWS/ws_JsonAdapter.aspx';
 	}
 }
 
