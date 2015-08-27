@@ -7,13 +7,13 @@ Full iPayout Documentation: https://www.i-payout.com/API/Default.aspx
 
 I created this as an abstraction to the iPayout API making it easier to send and receive requests without having to worry about the nitty gritty.
 
-#Installation
+# Installation
 
 ```
 	npm install ipayout-node
 ```
 
-#Usage
+# Usage
 
   * Require ipayout-node in your project:
 
@@ -37,7 +37,7 @@ I created this as an abstraction to the iPayout API making it easier to send and
   
   ```
   
-#Full Example
+# Full Example
 
 ``` js
 var ipayout = require('ipayout-node')({
@@ -86,7 +86,7 @@ ipayout
 	});
 ```
 
-#Notes
+# Notes
 
 Things to keep in mind:
 
@@ -97,7 +97,7 @@ Things to keep in mind:
   
   * Dates, such as `DateOfBirth` currently only support string dates (No date objects) `eg."1/1/1970"`.
 
-#Contribution
+# Contribution
   I accept Pull-Requests! There are many, many ways to make this abstraction better this is very primitive/preliminary stuff at the moment.
   
   Feel free to add and improve as you wish.
