@@ -1,5 +1,5 @@
-var Validator = require('./lib/Validator')
-var Requestor = require('./lib/Requestor')
+var Validator = require('./lib/validator.js')
+var Requestor = require('./lib/requestor.js')
 
 
 var API = function(options) {
