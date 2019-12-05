@@ -10,18 +10,18 @@
   "author": "Kenneth Hernandez <kennysmoothx@gmail.com>",
   "license": "MIT",
   "keywords": [
-   "ipayout",
-   "ewallet",
-   "api",
-   "sdk"
- ],
- "repository": {
+    "ipayout",
+    "ewallet",
+    "api",
+    "sdk"
+  ],
+  "repository": {
     "type": "git",
     "url": "https://github.com/kennysmoothx/ipayout-node.git"
   },
   "dependencies": {
-    "request": "^2.61.0"
-},
-"readmeFilename": "README.md",
-"man": "README.md"
+    "request": "^2.88.0"
+  },
+  "readmeFilename": "README.md",
+  "man": "README.md"
 }
