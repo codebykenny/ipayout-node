@@ -31,8 +31,10 @@ I created this as an abstraction to the iPayout API making it easier to send and
   ``` js
   ipayout
     .run('eWallet_RegisterUser', userData)
-    .then(function (err, response) {
-  
+    .then(function(response) {
+      //success
+    }).catch(function(err) {
+      //failed
     });
   
   ```
@@ -63,11 +65,7 @@ var userData = {
 
 ipayout
   .run('eWallet_RegisterUser', userData)
-  .then(function(err, data) {
-		if (err) {
-		  //handle error
-		}
-		
+  .then(function(data) {
 		console.log(data);	
 	  /*	
       { response: 
@@ -83,7 +81,9 @@ ipayout
         }
       }
     */
-	});
+	}).catch(function(err) {
+    //handle error
+  });
 ```
 
 # Notes
