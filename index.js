@@ -33,39 +33,24 @@ API.prototype.run = function(fn, data) {
 
 	if (!fn) {
 		this.error = 'No eWallet API function referenced.';
-		return this;
+		return;
 	}
 
 	if (!data) {
 		this.error = 'Command called with no data.'
-		return this;
+		return;
 	}
 
 	validData = Validator.validateObject(this.MerchantGUID, this.MerchantPassword, fn, data);
 
 	if (!validData) {
 		this.error = 'The data provided was not valid.'
-		return this;
+		return;
 	}
 
 	this.validData = validData;
 
-	return this;
-}
-
-API.prototype.then = function (callback) {
-	if (this.error) {
-		callback(this.error);
-
-		return;
-	}
-
-	if (!this.validData) {
-		callback('Did not find any valid data for this request.');
-		return;
-	}
-
-	Requestor.makeRequest.call(this, callback);
+	return Requestor.makeRequest(this.apiUrl, this.validData);
 }
 
 module.exports = API;
